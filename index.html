@@ -5,90 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artisan-Burger</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <script src="https://kit.fontawesome.com/ac52fd1507.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="cabeca"> <!-- Cabeçario -->
             <img class="logo" src="imagens/logo-artisan.png" alt="Logo Hamburgueria Artisan">
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Cardápio</a>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Localização</a>
-                <a href="#">Contato</a>
-            </nav>
-            <nav class="social">
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a class="botao" href="#">Peça agora</a>
-            </nav>
+            <div class="menu-mobile">
+                <i id="btn-menu" class="fa-solid fa-bars"></i>
+            </div>
+                <nav id="menu" class="menu">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#local">Localização</a>
+                </nav>
+                <nav class="social">
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="botao">Peça agora</a>
+                </nav>
         </div>
         <main class="banner"> <!-- Banner -->
             <h1 class="titulo">Hamburguer Artesanal</h1>
             <p class="estrela">--------------<i class="fa-solid fa-star"></i>--------------</p>
-            <p>igredientes selecionados, carne de alta qualidade e muito sabor em cada mordida.</p>
+            <p>ingredientes selecionados, carne de alta qualidade e muito sabor em cada mordida.</p>
             <a class="botao" href="#">Ver Cardápio </a>
         </main>
     </header>
-    <section>
-        <main class="cardapio">
-            <h2>conheça nossos</h2>
-            <h1 class="titulo">Burgues</h1>
-            <p class="estrela">--------------<i class="fa-solid fa-star"></i>--------------</p>
-            <div class="card">
-                <div class="bcard">
-                    <img src="imagens/xSalada.png" alt="Xsalada">
-                    <h1 class="titulo">X-Salada</h1>
+    <main>
+        <section id="inicio" class="inicio">
+            <section class="burgues"> <!-- Hamburgues -->
+                <h2>conheça nossos</h2>
+                <h1 class="titulo">Burgers</h1>
+                <p class="estrela">--------------<i class="fa-solid fa-star"></i>--------------</p>
+                <div class="card">
+                    <div class="ham">
+                        <img src="imagens/xSalada.png" alt="Xsalada">
+                        <h2 class="titulo">X-Salada</h2>
+                    </div>
+                    <div class="ham">
+                        <img src="./imagens/xBacon.png" alt="">
+                        <h2 class="titulo">X-Bacon</h2>
+                    </div>
+                    <div class="ham">
+                        <img src="./imagens/xCheddar.png" alt="">
+                        <h2 class="titulo">X-Cheddar</h2>
+                    </div>
                 </div>
-                <div class="bcard">
-                    <img src="./imagens/xBacon.png" alt="">
-                    <h1 class="titulo">X-Bacon</h1>
-                </div>
-                <div class="bcard">
-                    <img src="./imagens/xCheddar.png" alt="">
-                    <h1 class="titulo">X-Cheddar</h1>
-                </div>
-                <a href="#" class="botao">Todos os Burgues</a>
-            </div>
-        </main>
+                <a href="#" class="botao">Todos os Burgers</a>
+            </section>
         
-        <main class="sobre">
-            <h2>porque escolher</h2>
-            <h1 class="titulo">A gente?</h1>
-            <p class="estrela">--------------<i class="fa-solid fa-star"></i>--------------</p>
-            <div class="igredientes">
-                <div>
-                    <i class="fa-solid fa-bacon"></i>
-                    <div>
-                        <h2 class="titulo">Carne selecioandas</h2>
-                        <p>Carne Bovina. Ponta de costela.</p>
+            <section id="sobre" class="sobre"> <!-- sobre -->
+                <h2>porque escolher</h2>
+                <h1 class="titulo">A gente?</h1>
+                <p class="estrela">--------------<i class="fa-solid fa-star"></i>--------------</p>
+                <div class="info">
+                    <div class="card">
+                        <i class="fa-solid fa-bacon"></i>
+                        <div class="card">
+                            <h2 class="titulo">Carnes selecionadas</h2>
+                            <p>Carne Bovina. Ponta de costela.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-burger"></i>
+                        <div>
+                            <h2 class="titulo">receitas exclusivas</h2>
+                            <p>molhos e combinações exclusivas feitas pela casa.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-leaf"></i>
+                        <div>
+                            <h2 class="titulo">Ingredientes frescos</h2>
+                            <p>Todos os ingredientes são selecionados diariamente.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-heart"></i>
+                        <div>
+                            <h2 class="titulo">feito com amor</h2>
+                            <p>Mais que um lanche. uma experiencia inesquecivel.</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-burger"></i>
-                    <div>
-                        <h2 class="titulo">receitas exclusivas</h2>
-                        <p>molhos e combinações exclusivas feitas pela casa.</p>
-                    </div>
-                </div>
-                <div>
-                    <i class="fa-solid fa-leaf"></i>
-                    <div>
-                        <h2 class="titulo">Ingredientes frescos</h2>
-                        <p>Todos os igredientes sao selecionados diariamente.</p>
-                    </div>
-                </div>
-                <div>
-                    <i class="fa-solid fa-heart"></i>
-                    <div>
-                        <h2 class="titulo">feito com amor</h2>
-                        <p>Mais que um lanche. uma experiencia inesquecivel.</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </section>
+            </section>
+        </section>
 
+        <section id="local" class="localizacao"><!-- Localização -->
+            <h1 class="titulo">Localização</h1>
+            <p class="estrela">--------------<i class="fa-solid fa-star"></i>--------------</p>
+
+            <div class="local">
+                <section class="texto">
+                    <p class="paragrafo">Estamos prontos para receber você em um ambiente aconchegante, perfeito para curtir um hambúrguer artesanal feito na hora. Venha nos visitar e aproveite uma experiência cheia de sabor.</p>
+                </section>
+                <section class="infoLocal">
+                        <div class="cardLocal">
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                <h2 class="titulo">horario de funcionamento</h2>
+                                <p>17:00 ate as 00:00</p>
+                                <p>Ter a Dom</p>
+                            </div>
+                        </div>
+                        <div class="cardLocal">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h2 class="titulo">Endereço</h2>
+                                <p>R:Domingos N:29</p>
+                                <p>Bairro: Corintias</p>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <a href="#" class="botao">Abrir no Google Maps</a>
+        </section>
+    </main>
+    <footer>
+        Todos os direitos reservados a<a href="https://github.com/Souza-JV">@senhorQ</a>
+    </footer>
 </body>
+<script>
+    const bot =  document.getElementById('btn-menu')
+    const menu = document.getElementById('menu')
+
+    bot.addEventListener('click', () => {
+        menu.classList.toggle('ativo')
+    })
+</script>
 </html>

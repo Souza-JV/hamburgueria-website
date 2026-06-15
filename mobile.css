@@ -16,10 +16,6 @@
         top: 100px;
     }
 
-    .social .botao {
-        display: none;
-    }
-
     .menu-mobile {
         display: block;
         font-size: 2em;
@@ -35,5 +31,11 @@
 
     .menu.ativo {
         display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .social .botao {
+        display: none;
     }
 }

@@ -67,9 +67,8 @@ header {
     background-color: transparent;
 }
 
-.menu-mobile {
+.social > .menu-mobile {
     display: none;
-    
 }
 
 .menu {
@@ -93,7 +92,7 @@ header {
 }
 
 .social {
-    margin-left: 20px;
+    margin-left: px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,9 +206,10 @@ header {
 
 .info > .card {
     margin-top: 40px;
+    width: 100%;
 
-    width: 420px;
     display: flex;
+    flex-direction: row;
     gap: 10px;
 }
 

@@ -16,8 +16,8 @@
         top: 100px;
     }
 
-    .menu-mobile {
-        display: block;
+    .social > .menu-mobile {
+        display: flex;
         font-size: 2em;
         cursor: pointer;
         order: 2;
@@ -32,10 +32,27 @@
     .menu.ativo {
         display: flex;
     }
+
+    .card > div {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 600px) {
+    .logo {
+        width: 200px;
+    }
+
+    .social a {
+        display: none;
+    }
+
     .social .botao {
         display: none;
+    }
+
+    .card > div {
+        width: 200px;
+        font-size: 1.2em;
     }
 }

@@ -144,12 +144,14 @@ header {
     margin-top: 60px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 60px;
 }
 
 .burgues { /* Burguers */
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .burgues h1, .sobre h1 {
@@ -162,6 +164,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     align-items: end;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -187,10 +190,9 @@ header {
 
 
 .sobre { /* sobre */
-    width: 50%;
-    min-width: 420px;
     display: flex;
     flex-direction: column;
+    justify-content: start;
 }
 
 .sobre > h2 {
@@ -199,18 +201,15 @@ header {
 
 .info {
     margin-bottom: 60px;
+    margin-top: 40px;
     display: flex;
-    flex-flow: row wrap;
-    
+    flex-direction: column;
+    gap: 10px;
 }
 
 .info > .card {
-    margin-top: 40px;
-    width: 100%;
-
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-direction: column;
 }
 
 .info > .card > div {
@@ -249,12 +248,10 @@ header {
 }
 
 .local {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 60px;
 }
 
 .local > .paragrafo {
@@ -266,11 +263,10 @@ header {
 }
 
 .infoLocal {
-    width: 50%;
-    min-width: 420px;
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
     
     gap: 10px;
 }
@@ -284,11 +280,9 @@ header {
 }
 
 .cardLocal {
-    width: 300px;
     display: flex;
     gap: 20px;
     padding: 10px;
-    
 }
 
 footer {

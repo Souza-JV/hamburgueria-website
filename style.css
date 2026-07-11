@@ -295,4 +295,11 @@ footer {
     justify-content: center;
 }
 
+footer a {
+    padding-left: 10px;
+    text-underline-offset: 5px;
+    color: rgb(209, 209, 0);
+
+}
+
 
